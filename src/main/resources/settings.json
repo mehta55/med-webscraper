@@ -1,0 +1,39 @@
+{
+	"analysis": {
+		"normalizer": {
+			"case_insensitive_analyzer": {
+				"type": "custom",
+				"filter": [
+					"lowercase"
+				]
+			}
+		},
+		"analyzer": {
+			"autocomplete_analyzer": {
+				"type": "custom",
+				"tokenizer": "edge_ngram_tokenizer",
+				"filter": [
+					"lowercase"
+				]
+			}
+		},
+		"filter": {
+			
+		},
+		"tokenizer": {
+			"edge_ngram_tokenizer": {
+				"type": "edgeNGram",
+				"min_gram": "3",
+				"max_gram": "20",
+				"token_chars": [
+					"letter",
+					"digit",
+					"symbol"
+				]
+			}
+		},
+		"char_filter": {
+			
+		}
+	}
+}

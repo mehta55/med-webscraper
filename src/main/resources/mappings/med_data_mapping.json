@@ -1,0 +1,24 @@
+{
+	"dynamic": "strict",
+	"properties": {
+		"id": {
+			"type": "keyword"
+		},
+		"medName": {
+			"normalizer": "case_insensitive_analyzer",
+			"type": "keyword"
+		},
+		"medNameToken0": {
+			"normalizer": "case_insensitive_analyzer",
+			"type": "keyword"
+		},
+		"medNameToken1": {
+			"normalizer": "case_insensitive_analyzer",
+			"type": "keyword"
+		},
+		"medNameAutoComplete": {
+			"type": "text",
+			"analyzer": "autocomplete_analyzer"
+		}
+	}
+}
